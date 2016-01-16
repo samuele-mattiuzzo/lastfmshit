@@ -26,8 +26,15 @@
 		        	var artist = dat['artist']
 		        	var top_track = dat['top_track']
 		        	var similar_artist = dat['similar_artist']
+		        	var genre = dat['genre']
+		        	var img_url = dat['img_url']
+		        	var top_track_listens = dat['top_track_listens']
+		        	var similar_artist_url = dat['similar_artist_url']
 
-		        	console.log(similar_artist)
+		        	var string;
+		        	var string += '<tr><td>' + artist + '</td>';
+
+		        	$('table').append(string);
 		        })
 		    }
 		});
