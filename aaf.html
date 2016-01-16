@@ -32,12 +32,13 @@
 		        	var similar_artist_url = dat['similar_artist_url']
 
 		        	var string;
-		        	string += '<tr><td>' + artist + '</td>';
+		        	string += '<tr><td><img src="' + img_url + '"></td>';
+		        	string += '<td>' + artist + '</td>';
 		        	string += '<td>' + artist_listens + '</td>';
 		        	string += '<td>' + genre + '</td>';
 		        	string += '</tr>'
 
-		        	$('table').append(string);
+		        	$('.table').append(string);
 		        })
 		    }
 		});
