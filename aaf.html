@@ -15,10 +15,13 @@
 
 	<script>
 	$(document).ready(function() {
-		$.get( "aaf.json", function( data ) {
-			$(data).each(function(d) {
-				console.log(d);
-			});
+		$.ajax({
+		    url: "aaf.json",
+		    dataType: "text",
+		    success: function(data) {
+		        var json = $.parseJSON(data);
+		        console.log(json)
+		    }
 		});
 	});
 
