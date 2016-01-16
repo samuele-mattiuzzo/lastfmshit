@@ -20,12 +20,12 @@
 		    dataType: "text",
 		    success: function(data) {
 		        var json = $.parseJSON(data);
-		        $(json).each(function(j) {
-		        	var arist_url = j['arist_url']
-		        	var artist_listens = j['artist_listens']
-		        	var artist = j['artist']
-		        	var top_track = j['top_track']
-		        	var similar_artist = j['similar_artist']
+		        $(json).each(function(j, dat) {
+		        	var arist_url = dat['arist_url']
+		        	var artist_listens = dat['artist_listens']
+		        	var artist = dat['artist']
+		        	var top_track = dat['top_track']
+		        	var similar_artist = dat['similar_artist']
 
 		        	console.log(similar_artist)
 		        })
