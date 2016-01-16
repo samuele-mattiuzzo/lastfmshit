@@ -20,7 +20,15 @@
 		    dataType: "text",
 		    success: function(data) {
 		        var json = $.parseJSON(data);
-		        console.log(json)
+		        $(json).each(function(j) {
+		        	var arist_url = j['arist_url']
+		        	var artist_listens = j['artist_listens']
+		        	var artist = j['artist']
+		        	var top_track = j['top_track']
+		        	var similar_artist = j['similar_artist']
+
+		        	console.log(similar_artist)
+		        })
 		    }
 		});
 	});
